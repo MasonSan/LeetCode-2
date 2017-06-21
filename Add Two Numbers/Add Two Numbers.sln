@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Add Two Numbers", "Add Two Numbers\Add Two Numbers.csproj", "{E5F40BC1-690D-42FA-A689-C75F961FE5F6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Add Two Numbers Test", "Add Two Numbers Test\Add Two Numbers Test.csproj", "{C6E3BC5F-36BD-4758-B32A-8B33BF06EB01}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{E5F40BC1-690D-42FA-A689-C75F961FE5F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5F40BC1-690D-42FA-A689-C75F961FE5F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5F40BC1-690D-42FA-A689-C75F961FE5F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6E3BC5F-36BD-4758-B32A-8B33BF06EB01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6E3BC5F-36BD-4758-B32A-8B33BF06EB01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6E3BC5F-36BD-4758-B32A-8B33BF06EB01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6E3BC5F-36BD-4758-B32A-8B33BF06EB01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
