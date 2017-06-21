@@ -18,7 +18,7 @@ namespace Add_Two_Numbers_Test
             var expected = new List<int>() { 7, 0, 8 };
 
             //action
-            List<int> actual = target.AddTwoNumbers(list1, list2);
+            List<int> actual = (List<int>)target.AddTwoNumbers(list1, list2);
 
             //assert
             CollectionAssert.AreEqual(expected, actual);
