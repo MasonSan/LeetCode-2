@@ -13,15 +13,23 @@ namespace Add_Two_Numbers_Test
         {
             //arrange
             var target = new Solution();
-            var list1 = new List<int>() { 2, 4, 3 };
-            var list2 = new List<int>() { 5, 6, 4 };
-            var expected = new List<int>() { 7, 0, 8 };
+            var number1 = new ListNode(2);
+            number1.next = new ListNode(4);
+            number1.next.next = new ListNode(3);
 
-            //action
-            List<int> actual = (List<int>)target.AddTwoNumbers(list1, list2);
+            var number2 = new ListNode(5);
+            number2.next = new ListNode(6);
+            number2.next.next = new ListNode(4);
+
+            var expected = new ListNode(7);
+            expected.next = new ListNode(0);
+            expected.next.next = new ListNode(8);
+
+            //act
+            ListNode actual = target.AddTwoNumbers(number1, number2);
 
             //assert
-            CollectionAssert.AreEqual(expected, actual);
+            Assert.AreEqual(expected, actual);
         }
     }
 }
