@@ -2,6 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Add_Two_Numbers;
 using System.Collections.Generic;
+using ExpectedObjects;
 
 namespace Add_Two_Numbers_Test
 {
@@ -21,15 +22,21 @@ namespace Add_Two_Numbers_Test
             number2.next = new ListNode(6);
             number2.next.next = new ListNode(4);
 
-            var expected = new ListNode(7);
-            expected.next = new ListNode(0);
-            expected.next.next = new ListNode(8);
+            ExpectedObject expexted = new ListNode(7)
+            {
+                next = new ListNode(0)
+                {
+                    next = new ListNode(8)
+                }
+            }.ToExpectedObject();
+                                        
 
             //act
             ListNode actual = target.AddTwoNumbers(number1, number2);
 
             //assert
-            Assert.AreEqual(expected, actual);
+            expexted.ShouldEqual(actual);
+            
         }
     }
 }
