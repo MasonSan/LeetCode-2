@@ -38,5 +38,30 @@ namespace Add_Two_Numbers_Test
             expexted.ShouldEqual(actual);
             
         }
+
+        [TestMethod]
+        public void Given_5_and_5_should_return_0_1()
+        {
+            //arrange
+            var target = new Solution();
+            var number1 = new ListNode(5);
+            var number2 = new ListNode(5);
+            
+
+            ExpectedObject expexted = new ListNode(0)
+            {
+                next = new ListNode(1)
+            }.ToExpectedObject();
+
+
+            //act
+            ListNode actual = target.AddTwoNumbers(number1, number2);
+
+            //assert
+            expexted.ShouldEqual(actual);
+
+        }
     }
+
+
 }
